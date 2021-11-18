@@ -104,21 +104,44 @@ console.log(find(77, numArray));
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
+  console.log('In isFirstLetter', letter, string);
 
+  if (letter === string[0]) {
+    return true;
+  } //end if
+  else {
+    return false;
+  }
 }
+
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll( ) {
+function sumAll(array) {
+  console.log('In sumAll:', array);
+  
   let sum = 0
   // TODO: loop to add items
+  for (i=0; i<array.length; i++) {
+    sum += array[i];
+  }
   return sum;
 }
+
+let numberArray = [6, 99, 10, 765, 25, 67, 924];
+console.log(sumAll(numberArray));
+
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
+let inputArray = [4, 89, -10, 72, 0, -33, 793];
+
+function returnPositives (array) {
+  console.log('In ');
+  
+}
 
 
 
