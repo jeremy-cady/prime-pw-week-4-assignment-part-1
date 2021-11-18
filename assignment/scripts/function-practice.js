@@ -83,8 +83,20 @@ console.log(getLast(cityArray));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
-  
-}
+  console.log('In find', value, array);
+
+  for (let element of array) {
+    if (element === value) {
+      return true;
+    } //end if
+  } //end for
+  return false;
+} //end find
+let numArray = [27, 45, 89, 786, 1009, 4598];
+console.log(find(89, numArray));
+console.log(find(77, numArray));
+
+
 
 // ----------------------
 // Stretch Goals
