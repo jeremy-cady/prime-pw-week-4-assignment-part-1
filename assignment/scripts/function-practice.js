@@ -75,6 +75,9 @@ function getLast( array ) {
     return 'undefined';
   } //end else
 } //end getLast
+let cityArray = ['New York', 'Chicago', 'Minneapolis', 'Kansas City', 'Seattle'];
+console.log(getLast(cityArray));
+
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
