@@ -139,12 +139,40 @@ console.log(sumAll(numberArray));
 let inputArray = [4, 89, -10, 72, 0, -33, 793];
 
 function returnPositives (array) {
-  console.log('In ');
+  console.log('In returnPositives:', array);
+
+  let newNumArray = [];
+
+  for (let integer of array) {
+    if (integer > 0) {
+      newNumArray.push(integer);
+    } //end if
+  } //end for
+  return newNumArray;
   
-}
+} // end returnPositives
+console.log(returnPositives(inputArray));
+
 
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+// From CodeWars:
+// Complete the method that takes a boolean value and return a "Yes" string for true, 
+// or a "No" string for false.
+
+function boolToWord( bool ){
+  if (bool === true) {
+    return 'Yes';
+  }
+  else if (bool === false){
+    return 'No';
+  }
+}
+
+console.log(boolToWord(true));
+console.log(boolToWord(false));
+
